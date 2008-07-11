@@ -1,0 +1,17 @@
+page.replace_html 'sign-up-form', :partial => 'form', :locals => {:sign_up => @sign_up}
+#page.visual_effect :fade, 'thank-you', :duration => 4
+flash[:error] = nil
+flash[:notice] = "Thanks for signing up!"
+rjs_transparent_flash_message(page)
+
+page['sign_up_name'].value = ''
+page['sign_up_twitter_username'].value = ''
+page['sign_up_email'].value = ''
+
+if @sign_up.show_name
+  @sign_ups = SignUp.recent
+  page.replace_html 'attendees', :partial => 'attendees', :locals => {:sign_ups => @sign_ups}
+  page.visual_effect :highlight, 'sign-up-' + @sign_up.id.to_s, :duration => 4, :startcolor => "'#82A604'", :endcolor => "'#000000'"
+end
+
+page << "$('sign_up_name').focus();"

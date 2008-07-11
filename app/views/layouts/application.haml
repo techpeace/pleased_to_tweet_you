@@ -1,0 +1,12 @@
+%html
+  %head
+    %title BarCamp Austin III - Sign up
+    = stylesheet_link_tag "global", :media => "all" 
+    = javascript_include_tag :defaults
+    = javascript_include_tag 'transparent_message'
+  %body{:onload => "changeInputs();"}
+    = @content_for_layout
+    = transparent_message_create("ajax_info_message", "Saving information...<br/>", "/images/large-loader.gif")
+      
+      
+    

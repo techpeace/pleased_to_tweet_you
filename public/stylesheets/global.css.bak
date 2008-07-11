@@ -1,0 +1,167 @@
+body {
+  height: 100%;
+  font-size: 0.9em;
+  font-family: Helvetica, "Trebuchet MS", Arial, sans-serif;
+}
+
+img {
+  padding-top: 0.5em;
+}
+
+#left-col {
+  width: 60%;
+  float: left;
+}
+
+#right-col {
+  width: 35%;
+  padding-top: 7em;
+  float: right;
+}
+
+.form-line {
+  height: 3em;
+}
+
+#form-left-col {
+  width: 20%;
+  height: 4em;
+  float: left;
+}
+
+#form-left-col .form-line {
+  text-align: right;
+}
+
+#form-right-col {
+  width: 75%;
+  height: 4em;
+  float: right;
+}
+
+#form-bottom {
+  margin-left: -1.5em;
+}
+
+#form-indicator {
+  display: none;
+  margin-top: -0.5em;
+}
+
+.error {
+  color: red;
+  font-size: 0.8em;
+}
+
+.error-field {
+  border: 2px dotted red;
+}
+
+
+#first-name-error { display:none; }
+#last-name-error { display:none; }
+#email-error { display:none; } 
+
+#header {
+  background-image: url('/images/logo.gif');
+  background-repeat: no-repeat;
+  height: 7em;
+}
+
+.info {
+  padding-left: 1em;
+  padding-bottom: 1em;
+}
+
+form {
+  background: lightgray;
+  padding: 1em;
+  border: 2px dotted gray;
+  height: 18em;
+  -moz-border-radius: 1em;
+}
+
+input {
+  border: 2px dotted black;
+  font-family: Helvetica, "Trebuchet MS", Arial, sans-serif;
+  font-size: 1em;
+  padding: 0.1em;
+}
+
+input:disabled {
+  background: lightgray;
+}
+
+input:focus {
+  border: 2px dotted blue;
+}
+
+#submit {
+  margin-left: 22em;
+  -moz-border-radius: 0.4em;
+  border: 1px solid gray;
+  padding: 0.5em;
+}
+
+#submit:focus {
+  border: 1px solid blue;
+}
+
+#thank-you {
+  margin: 0 auto;
+  width: 11em;
+  padding: 0.3em;
+  font-size: 2em;
+  font-weight: bold;
+  color: gray;
+}
+
+.sign-up {
+  padding-left: 1em;
+  color: blue;
+}
+
+hr {
+  border: 1px dotted gray;
+}
+
+/* Transparent form message (error and notice) for static form*/
+.transparent_message {
+  width: 95%;
+  text-align: center;
+  font-size: 30px;
+  opacity:  0.8;
+  position: absolute;
+  top: 20px;
+  -moz-border-radius:10px;
+	
+}
+
+.transparent_error {
+  background: #FFA3A9;
+  border: 1px solid #750004;
+}
+
+.transparent_error p {
+  color: #560109;
+}
+
+.transparent_notice {
+  background: #9BFFA3;
+  border-top: 1px solid #23571D;
+  border-bottom: 1px solid #23571D;  
+  margin: 10px;
+}
+
+.transparent_notice p {
+  color: #23571D;
+}
+
+/* Saving message for static form */
+#info_message {
+  position: absolute;
+  background: #FFF;
+  opacity:  0.7;
+}
+
+#info_message p {}

@@ -1,0 +1,8 @@
+= About
+
+PleasedToTweetYou is designed to be used as a full-screen kiosk application at the entrance to a conference.  You can use it to gather contact information about your attendees.  If an attendee chooses to add their Twitter username, they will also be sent a direct message announcing their arrival. The app was first used at iPhoneDevCamp, and was later refined for use at BarCamp Austin III.
+ 
+= License
+ 
+PleasedToTweetYou is distributed under the same license as Ruby on Rails. See
+http://www.opensource.org/licenses/mit-license.php

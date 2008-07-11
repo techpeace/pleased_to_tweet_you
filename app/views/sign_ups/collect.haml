@@ -1,0 +1,11 @@
+#left-col
+  = image_tag 'logo.png'
+  
+  %br{:clear => "all"}
+            
+  %p.info 
+  
+  #sign-up-form= render :partial => "form"
+  
+#right-col
+  #attendees= render :partial => "attendees", :locals => {:sign_ups => @sign_ups}

@@ -1,0 +1,6 @@
+%hr
+
+- for sign_up in @sign_ups
+  - if sign_up.show_name
+    %div{:class => "sign-up", :id=> "sign-up-" + sign_up.id.to_s}= h(sign_up.full_name) + " signed up " + time_ago_in_words(sign_up.created_at) + " ago."
+    %hr

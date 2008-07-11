@@ -1,0 +1,7 @@
+page.replace_html 'sign-up-form', :partial => 'form', :locals => {:sign_up => @sign_up}
+
+flash[:notice] = nil
+flash[:error] = "Please enter your name."
+rjs_transparent_flash_message(page)
+
+page << "$('sign_up_name').focus();"

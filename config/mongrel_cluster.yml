@@ -1,0 +1,8 @@
+--- 
+cwd: /var/rails/signup
+port: "8000"
+environment: production
+address: 127.0.0.1
+pid_file: /var/rails/signup/pids/mongrel.pid
+log_file: /var/rails/signup/log/mongrel.log
+servers: 5

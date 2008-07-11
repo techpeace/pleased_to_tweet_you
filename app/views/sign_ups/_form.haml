@@ -1,0 +1,50 @@
+- form_remote_for :sign_up, @sign_up,                                |
+  :url      => { :action => "create" },                              |
+  :loading  => transparent_message_show('ajax_info_message'),        |
+  :complete => transparent_message_hide('ajax_info_message') do |f|  |
+  
+  .form-field
+    = f.text_field :name, :size => 37
+    %br{:clear => "all"}
+    %label{:for => "name"} Name
+    
+  %br{:clear => "all"}
+  
+  .form-field
+    = f.text_field :email, :size => 30
+    %br{:clear => "all"}
+    %label{:for => "email_address"} Email address
+
+  %br{:clear => "all"}
+
+  .form-field
+    = f.text_field :twitter_username, :size => 25
+    %br{:clear => "all"}
+    %label{:for => "twitter_username"} Twitter account
+    
+  #form-bottom
+    #form-bottom-left-col
+      %label{:for => "sign_up_show_name"} Announce my arrival
+      %br
+      %label{:for => "sign_up_member_of_press"} I am a member of the press
+      %br
+      %label{:for => "sign_up_email_opt_in"} Contact me about future BarCamps in Austin
+    
+    #form-bottom-right-col
+      = f.check_box :show_name, :class => "button"
+      %br
+      = f.check_box :member_of_press, :class => "button"
+      %br
+      = f.check_box :email_opt_in, :class => "button"
+    
+
+    
+    %br{:clear => "all"}
+    
+    %div
+      = submit_tag "Sign me up!", :id => "submit", :class => "button"
+      = image_tag "loader.gif", :id => "form-indicator"
+
+
+#thank-you Thanks for signing up!
+

@@ -1,0 +1,11 @@
+#total= SignUp.count.to_s + " enlisted"
+
+%hr
+
+- for sign_up in @sign_ups
+  %div{:class => "sign-up", :id=> "sign-up-" + sign_up.id.to_s}= h(sign_up.name) + " signed up " + time_ago_in_words(sign_up.created_at) + " ago."
+  %hr
+    
+#tagline 
+  %p Development provided by
+  %div{:margin => "20px 0px 0px 0px;"}= image_tag('orgsync.jpg')

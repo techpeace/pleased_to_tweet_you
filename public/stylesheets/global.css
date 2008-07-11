@@ -1,0 +1,243 @@
+/* @override http://localhost:3000/stylesheets/global.css?1203935116 */
+
+body {
+  height: 100%;
+  font-size: 0.9em;
+  font-family: "Lucida Grande", Lucida, Verdana, sans-serif;
+  background: black;
+  padding-top: 5em;
+}
+
+img {
+  padding: 0em;
+  margin: -1em 0em -5em 0em;
+  float: right;
+}
+
+#left-col {
+  width: 50%;
+  float: left;
+  align: right;
+}
+
+#right-col {
+  width: 45%;
+  padding-top: 2.5em;
+  float: right;
+}
+
+#total {
+  font-size: 2.5em;
+  font-weight: bold;
+  padding: 0;
+  color: #B73012;
+  padding-left: 15px;
+} 
+
+#header {
+  background-image: url('/images/logo.gif');
+  background-repeat: no-repeat;
+  height: 7em;
+}
+
+.info {
+  padding-left: 1em;
+  padding-bottom: 1em;
+}
+
+#thank-you {
+  margin: 0 auto;
+  width: 11em;
+  padding: 0.3em;
+  font-size: 2em;
+  font-weight: bold;
+  color: black;
+}
+
+.sign-up {
+  padding-left: 15px;
+  color: #B73012;
+}
+
+hr {
+  border: 1px solid #84A414;
+}
+
+#tagline {
+  text-align: right;
+  font-size: 0.8em;
+  color: gray;
+  font-weight: bold;
+  padding-right: 15px;
+  position: absolute;
+	right: 0;
+	bottom: 0;
+}
+
+/* @group Form */
+
+form {
+  padding: 0em;
+  color:  #B73012;
+  margin: 0em;
+}
+
+#form-indicator {
+  display: none;
+  margin-top: -0.5em;
+}
+
+label {
+  float: right;
+}
+
+.checkbox {
+  border: 2px solid black;
+}
+
+input {
+  border: none;
+  border-bottom: 2px dotted #B73012;
+  background-color: black;
+  font-family: Helvetica, "Trebuchet MS", Arial, sans-serif;
+  font-size: 2em;
+  padding: 0.1em;
+  float:  right;
+  color: #84A414;
+  text-align: right;
+}
+
+input:disabled {
+  background: lightgray;
+}
+
+.button:focus {
+  background: #824703;
+}
+
+#form-bottom {
+  margin: 3em 0em 0em -1.5em;
+}
+
+#form-bottom p {
+  padding: 1em 0em 1em 0em;
+}
+
+#form-bottom div {
+  text-align: right;
+}
+
+#form-bottom input {
+  border: 2px solid #84A414;
+}
+
+#form-bottom label {
+  float: right;
+  padding-right: 1em;
+}
+
+#form-bottom-left-col {
+  text-align: right;
+  float: left;
+  width: 97%;
+}
+
+#form-bottom-right-col {
+  text-align: right;
+  float: right;
+  width: 3%;
+}
+
+.error {
+  color: red;
+  font-size: 0.8em;
+}
+
+.fieldWithErrors input {
+  border-bottom: 4px dotted red;
+}
+
+.form-line {
+  height: 3em;
+}
+
+#form-left-col {
+  width: 20%;
+  height: 4em;
+  float: left;
+}
+
+#form-left-col .form-line {
+  text-align: right;
+}
+
+#form-right-col {
+  width: 75%;
+  height: 4em;
+  float: right;
+}
+
+#submit {
+  margin-left: 22em;
+  border: 2px solid #B73012;
+  padding: 0.5em;
+  font-size: 1.5em;
+}
+
+#submit:focus, #submit:hover {
+  border: 2px solid #84A414;
+}
+
+/* @end */
+
+/* Transparent form message (error and notice) for static form*/
+.transparent_message {
+  width: 60%;
+  text-align: center;
+  font-size: 70px;
+  opacity:  0.8;
+  position: absolute;
+  top: 20px;
+  -moz-border-radius:10px;
+	
+}
+
+.transparent_error {
+  background: #FFA3A9;
+  border: 1px solid #750004;
+}
+
+.transparent_error p {
+  color: #560109;
+}
+
+.transparent_notice {
+  background: #824703; 
+  margin: 10px;
+  padding: 1em;
+}
+
+.transparent_notice p {
+  color: white;
+}
+
+/* Saving message for static form */
+#ajax_info_message {
+  position: absolute;
+  background: #824703;
+  opacity:  0.7;
+  text-align: center;
+  width: 300px;
+  height: 200px;
+  top: 30px;
+}
+
+#ajax_info_message p {
+  color: white;
+  font-size: 20px;
+  padding-top: 40px;
+}
+
+#ajax_info_message img {
+  margin: 77px 117px 117px 117px;
+}
